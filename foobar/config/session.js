@@ -44,7 +44,7 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-  // adapter: 'redis',
+   adapter: 'redis',
 
   /***************************************************************************
   *                                                                          *
@@ -55,11 +55,14 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-  // host: 'localhost',
-  // port: 6379,
+  //redis://redistogo:72cfc308daa3275579272f0a3631364d@barreleye.redistogo.com:9122/
+
+  host: 'barreleye.redistogo.com',
+  port: 9122,
+  user: 'redistogo',
   // ttl: <redis session TTL in seconds>,
-  // db: 0,
-  // pass: <redis auth password>,
+  db: 0,
+  pass: '72cfc308daa3275579272f0a3631364d',
   // prefix: 'sess:',
 
 
